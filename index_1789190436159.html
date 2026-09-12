@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Defense Heritage Interactive - Explore key military defense milestones, test your tactical knowledge, and earn military ranks.">
+  <title>Defense Heritage Interactive</title>
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style_1789190436160.css">
+  <!-- External JavaScript with defer -->
+  <script src="script_1789190436160.js" defer></script>
+</head>
+<body>
+  <!-- Ambient Looping Video Background -->
+  <video class="bg-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+    <source src="WhatsApp_Video_2026-09-12_at_10.48.08_AM_(1)_1789190448430.mp4" type="video/mp4">
+  </video>
+  <div class="bg-infinite-loop" aria-hidden="true"></div>
+
+  <!-- Archival Battlefield Photo Corners -->
+  <div class="war-photo-corners" aria-hidden="true">
+    <figure class="war-photo war-photo-northwest">
+      <img src="image_1789191662455.png" alt="">
+      <figcaption>ARMOURED THEATRE // ARCHIVE 01</figcaption>
+    </figure>
+    <figure class="war-photo war-photo-northeast">
+      <img src="image_1789191680239.png" alt="">
+      <figcaption>FIELD COMMAND // ARCHIVE 02</figcaption>
+    </figure>
+    <figure class="war-photo war-photo-southwest">
+      <img src="image_1789191700352.png" alt="">
+      <figcaption>FORWARD POSITION // ARCHIVE 03</figcaption>
+    </figure>
+    <figure class="war-photo war-photo-southeast">
+      <img src="image_1789191748610.png" alt="">
+      <figcaption>FORMATION BRIEF // ARCHIVE 04</figcaption>
+    </figure>
+  </div>
+
+  <!-- Motion System Loading State -->
+  <div id="site-loader" class="site-loader" role="status" aria-label="Loading Defense Heritage">
+    <div class="loader-crosshair" aria-hidden="true"></div>
+    <span class="loader-command">INITIALIZING FIELD ARCHIVE</span>
+    <strong class="loader-percentage">00%</strong>
+  </div>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="brand">
+        <img class="brand-logo" src="defense-heritage-logo.png" alt="Defense Heritage Interactive emblem">
+        <h1 class="site-title">Defense Heritage Interactive</h1>
+      </div>
+      <!-- Header Actions: Sound FX + Dark Mode -->
+      <div class="header-actions">
+        <button id="sound-toggle" class="sound-toggle-btn" aria-label="Toggle tactical sound effects" aria-pressed="true">
+          <span class="sound-icon" aria-hidden="true">&#x1F50A;</span>
+          <span class="sound-label">Audio FX</span>
+        </button>
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark mode" aria-pressed="false">
+          <span class="theme-icon" aria-hidden="true">&#x1F319;</span>
+          <span class="theme-label">Dark Mode</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Cinematic Hero / Motion Entry -->
+  <section id="command-brief" class="hero-command section" aria-labelledby="hero-heading">
+    <div class="hero-command-grid">
+      <div class="hero-copy">
+        <span class="hero-kicker">DEFENCE HERITAGE // MOTION ARCHIVE</span>
+        <h2 id="hero-heading">History, <em>in motion.</em></h2>
+        <p class="hero-lede">Follow the decisions, terrain, and courage that shaped India's defensive story from 1947 to the present.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#timeline">Enter the Archive <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-secondary" href="#photo-library">Photo Library <span aria-hidden="true">↗</span></a>
+          <button id="immersive-toggle" class="btn btn-secondary" type="button" aria-pressed="false">Immersive Mode</button>
+        </div>
+        <div class="hero-readout" aria-label="Archive status">
+          <span><i class="readout-dot" aria-hidden="true"></i> ARCHIVE ONLINE</span>
+          <span>1947—PRESENT</span>
+          <span>12 OPERATIONS INDEXED</span>
+        </div>
+      </div>
+
+      <div class="hero-reel">
+        <div class="hero-reel-frame">
+          <img src="image_1789191700352.png" alt="Archival photograph of an armoured vehicle in field terrain.">
+          <div class="hero-reticle" aria-hidden="true"></div>
+          <div class="hero-reel-stamp">VISUAL INTELLIGENCE<br><strong>FIELD 07 / 31</strong></div>
+          <div class="hero-reel-caption">TERRAIN • ARMOUR • RESOLVE</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="main-content">
+
+    <!-- Timeline Section (5–6 Defense Events) -->
+    <section id="timeline" class="section timeline-section" aria-labelledby="timeline-heading">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 id="timeline-heading">Defense Milestones &amp; Heritage Timeline</h2>
+          <p class="section-subtitle">Chronicles of valor, strategic resilience, and historic operations.</p>
+        </div>
+
+        <!-- Operational Theater Filter Tabs -->
+        <div class="theater-filter-container">
+          <span class="filter-label" id="filter-heading">Operational Theater:</span>
+          <div class="theater-filters" role="tablist" aria-labelledby="filter-heading">
+            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Operations (12)</button>
+            <button class="filter-btn" data-filter="ground" role="tab" aria-selected="false">Ground Defense</button>
+            <button class="filter-btn" data-filter="armored" role="tab" aria-selected="false">Armored Warfare</button>
+            <button class="filter-btn" data-filter="naval" role="tab" aria-selected="false">Naval Operations</button>
+            <button class="filter-btn" data-filter="mountain" role="tab" aria-selected="false">Mountain &amp; Siachen</button>
+            <button class="filter-btn" data-filter="air-tri" role="tab" aria-selected="false">Air &amp; Tri-Service</button>
+          </div>
+        </div>
+
+        <div class="timeline" role="list">
+
+          <!-- Event 1 -->
+          <article class="timeline-item" role="listitem" data-theater="ground" data-event-id="badgam">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <time class="timeline-date" datetime="1947-11">November 1947</time>
+              <h3 class="timeline-title">Battle of Badgam</h3>
+              <p class="timeline-description">
+                A pivotal defensive stand in the Kashmir Valley where Major Somnath Sharma and the 4th Kumaon Regiment held off numerically superior forces, securing the critical Srinagar airfield.
+              </p>
+              <div class="timeline-meta-row">
+                <span class="timeline-tag">Ground Defense</span>
+                <button class="btn-dossier" data-event-id="badgam" aria-haspopup="dialog">
+                  <span>Inspect Dossier</span> &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Event 2 -->
+          <article class="timeline-item" role="listitem" data-theater="mountain" data-event-id="rezang-la">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <time class="timeline-date" datetime="1962-11-18">November 18, 1962</time>
+              <h3 class="timeline-title">Battle of Rezang La</h3>
+              <p class="timeline-description">
+                Charlie Company of 13 Kumaon under Major Shaitan Singh defended the Chushul Valley at 16,000 feet in Ladakh. In freezing blizzards, 114 soldiers fought to the last round, repelling multiple heavy frontal assaults.
+              </p>
+              <div class="timeline-meta-row">
+                <span class="timeline-tag">High Altitude Last Stand</span>
+                <button class="btn-dossier" data-event-id="rezang-la" aria-haspopup="dialog">
+                  <span>Inspect Dossier</span> &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Event 3 -->
+          <article class="timeline-item" role="listitem" data-theater="armored" data-event-id="asal-uttar">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <time class="timeline-date" datetime="1965-09">September 1965</time>
+              <h3 class="timeline-title">Battle of Asal Uttar</h3>
+              <p class="timeline-description">
+                One of the largest armored tank battles since World War II. Defenders tactically breached canal bunds to bog down enemy Patton tanks in slush, neutralizing over 90 armored vehicles.
+              </p>
+              <div class="timeline-meta-row">
+                <span class="timeline-tag">Armored Warfare</span>
+                <button class="btn-dossier" data-event-id="asal-uttar" aria-haspopup="dialog">
+                  <span>Inspect Dossier</span> &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Event 4 -->
+          <article class="timeline-item" role="listitem" data-theater="naval" data-event-id="operation-trident">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <time class="timeline-date" datetime="1971-12-04">December 4, 1971</time>
+              <h3 class="timeline-title">Operation Trident</h3>
+              <p class="timeline-description">
+                A daring nighttime naval strike employing anti-ship missile boats that penetrated defended harbor waters, showcasing forward naval deterrence and strategic precision.
+              </p>
+              <div class="timeline-meta-row">
+                <span class="timeline-tag">Naval Strike</span>
+                <button class="btn-dossier" data-event-id="operation-trident" aria-haspopup="dialog">
+                  <span>Inspect Dossier</span> &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Event 5 -->
+          <article class="timeline-item" role="listitem" data-theater="ground" data-event-id="longewala">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <time class="timeline-date" datetime="1971-12-05">December 5, 1971</time>
+              <h3 class="timeline-title">Battle of Longewala</h3>
+              <p class="timeline-description">
+                A legendary defense where 120 soldiers of 23 Punjab with a single anti-tank weapon held an isolated Thar desert outpost through the night against 40+ tanks until air support arrived at dawn.
+              </p>
+              <div class="timeline-meta-row">
+                <span class="timeline-tag">Infantry &amp; Air Defense</span>
+                <button class="btn-dossier" data-event-id="longewala" aria-haspopup="dialog">
+                  <span>Inspect Dossier</span> &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Event 6 -->
+          <article class="timeline-item" role="listitem" data-theater="armored" data-event-id="basantar">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <time class="timeline-date" datetime="1971-12-16">December 15–17, 1971</time>
+              <h3 class="timeline-title">Battle of Basantar</h3>
+              <p class="timeline-description">
+                Critical armored engagement in the Shakargarh sector. Second Lieutenant Arun Khetarpal in his Centurion tank repulsed continuous armored counter-attacks, destroying multiple tanks despite lethal incoming fire.
+              </p>
+              <div class="timeline-meta-row">
+                <span class="timeline-tag">Armored Breakthrough</span>
+                <button class="btn-dossier" data-event-id="basantar" aria-haspopup="dialog">
+                  <span>Inspect Dossier</span> &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Event 7 -->
+          <article class="timeline-item" role="listitem" data-theater="mountain" data-event-id="meghdoot">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <time class="timeline-date" datetime="1984-04">April 1984</time>
+              <h3 class="timeline-title">Operation Meghdoot</h3>
+              <p class="timeline-description">
+                The world's highest tactical deployment atop the Siachen Glacier at altitudes exceeding 18,000 feet, securing all major passes along the Saltoro Ridge in sub-zero glaciated terrain.
+              </p>
+              <div class="timeline-meta-row">
+                <span class="timeline-tag">High Altitude Operation</span>
+                <button class="btn-dossier" data-event-id="meghdoot" aria-haspopup="dialog">
+                  <span>Inspect Dossier</span> &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Event 8 -->
+          <article class="timeline-item" role="listitem" data-theater="air-tri" data-event-id="cactus">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <time class="timeline-date" datetime="1988-11-03">November 3, 1988</time>
+              <h3 class="timeline-title">Operation Cactus</h3>
+              <p class="timeline-description">
+                Swift expeditionary intervention in the Maldives launched within hours. Paratroopers of the 50th Independent Parachute Brigade secured critical airfields, thwarting a hostile mercenary coup.
+              </p>
+              <div class="timeline-meta-row">
+                <span class="timeline-tag">Airborne Intervention</span>
+                <button class="btn-dossier" data-event-id="cactus" aria-haspopup="dialog">
+                  <span>Inspect Dossier</span> &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Event 9 -->
+          <article class="timeline-item" role="listitem" data-theater="air-tri" data-event-id="safed-sagar">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <time class="timeline-date" datetime="1999-05">May 1999</time>
+              <h3 class="timeline-title">Operation Safed Sagar</h3>
+              <p class="timeline-description">
+                Groundbreaking deployment of combat air power at extreme Himalayan altitudes during the Kargil Conflict, employing precision laser-guided munitions against fortified high-altitude positions.
+              </p>
+              <div class="timeline-meta-row">
+                <span class="timeline-tag">High Altitude Air Strike</span>
+                <button class="btn-dossier" data-event-id="safed-sagar" aria-haspopup="dialog">
+                  <span>Inspect Dossier</span> &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Event 10 -->
+          <article class="timeline-item" role="listitem" data-theater="mountain" data-event-id="tiger-hill">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <time class="timeline-date" datetime="1999-07">July 1999</time>
+              <h3 class="timeline-title">Battle of Tiger Hill</h3>
+              <p class="timeline-description">
+                A decisive combined-arms high-altitude assault during the Kargil Conflict, featuring precision artillery fire and vertical rock-face climbs to reclaim dominant heights overlooking National Highway 1D.
+              </p>
+              <div class="timeline-meta-row">
+                <span class="timeline-tag">Mountain Warfare</span>
+                <button class="btn-dossier" data-event-id="tiger-hill" aria-haspopup="dialog">
+                  <span>Inspect Dossier</span> &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Event 11 -->
+          <article class="timeline-item" role="listitem" data-theater="air-tri" data-event-id="raahat">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <time class="timeline-date" datetime="2015-04">April 2015</time>
+              <h3 class="timeline-title">Operation Raahat</h3>
+              <p class="timeline-description">
+                A massive tri-service evacuation mission from war-torn Yemen. Indian Navy vessels and Air Force C-17 Globemasters safely evacuated over 5,600 people, including nearly 1,000 foreign citizens from 41 nations.
+              </p>
+              <div class="timeline-meta-row">
+                <span class="timeline-tag">Tri-Service Evacuation</span>
+                <button class="btn-dossier" data-event-id="raahat" aria-haspopup="dialog">
+                  <span>Inspect Dossier</span> &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Event 12 -->
+          <article class="timeline-item" role="listitem" data-theater="air-tri" data-event-id="integrated-commands">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <time class="timeline-date" datetime="2020-01">January 2020</time>
+              <h3 class="timeline-title">Integrated Theater Commands &amp; CDS</h3>
+              <p class="timeline-description">
+                The institutional creation of the Chief of Defence Staff (CDS) and Department of Military Affairs, inaugurating unified tri-service theaterization and modern integrated defense capabilities.
+              </p>
+              <div class="timeline-meta-row">
+                <span class="timeline-tag">Tri-Service Modernization</span>
+                <button class="btn-dossier" data-event-id="integrated-commands" aria-haspopup="dialog">
+                  <span>Inspect Dossier</span> &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Historic Photo Library -->
+    <section id="photo-library" class="section photo-library-section" aria-labelledby="photo-library-heading">
+      <div class="section-container">
+        <div class="section-header field-intel-header">
+          <span class="section-kicker">VISUAL ARCHIVE // HISTORIC OPERATIONS</span>
+          <h2 id="photo-library-heading">Photo Library of India's War Heritage</h2>
+          <p class="section-subtitle">Explore the people, terrain, and operations behind key moments in India's defence history.</p>
+        </div>
+
+        <div class="photo-library-grid" role="list">
+          <article class="photo-library-card" role="listitem">
+            <div class="photo-library-media">
+              <img src="photo-library-01.jpg" alt="Indian soldiers and mountain terrain from the Kashmir theatre" loading="lazy" decoding="async">
+              <span class="photo-library-index">01</span>
+            </div>
+            <div class="photo-library-caption">
+              <span class="photo-library-kicker">GROUND DEFENCE</span>
+              <h3>Battle of Badgam</h3>
+              <dl class="photo-library-meta">
+                <div><dt>Date</dt><dd>November 1947</dd></div>
+                <div><dt>Place</dt><dd>Badgam, Kashmir Valley</dd></div>
+                <div><dt>Event</dt><dd>Battle of Badgam</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="photo-library-card" role="listitem">
+            <div class="photo-library-media">
+              <img src="photo-library-02.jpg" alt="Mountain artillery position in a high-altitude valley" loading="lazy" decoding="async">
+              <span class="photo-library-index">02</span>
+            </div>
+            <div class="photo-library-caption">
+              <span class="photo-library-kicker">HIGH ALTITUDE</span>
+              <h3>Battle of Rezang La</h3>
+              <dl class="photo-library-meta">
+                <div><dt>Date</dt><dd>18 November 1962</dd></div>
+                <div><dt>Place</dt><dd>Chushul Valley, Ladakh</dd></div>
+                <div><dt>Event</dt><dd>Battle of Rezang La</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="photo-library-card" role="listitem">
+            <div class="photo-library-media">
+              <img src="photo-library-03.jpg" alt="Indian flag raised on a mountain ridge" loading="lazy" decoding="async">
+              <span class="photo-library-index">03</span>
+            </div>
+            <div class="photo-library-caption">
+              <span class="photo-library-kicker">ARMOURED WARFARE</span>
+              <h3>Battle of Asal Uttar</h3>
+              <dl class="photo-library-meta">
+                <div><dt>Date</dt><dd>September 1965</dd></div>
+                <div><dt>Place</dt><dd>Khem Karan, Punjab</dd></div>
+                <div><dt>Event</dt><dd>Battle of Asal Uttar</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="photo-library-card" role="listitem">
+            <div class="photo-library-media">
+              <img src="photo-library-04.jpg" alt="Soldier moving through wooded terrain" loading="lazy" decoding="async">
+              <span class="photo-library-index">04</span>
+            </div>
+            <div class="photo-library-caption">
+              <span class="photo-library-kicker">NAVAL STRIKE</span>
+              <h3>Operation Trident</h3>
+              <dl class="photo-library-meta">
+                <div><dt>Date</dt><dd>4 December 1971</dd></div>
+                <div><dt>Place</dt><dd>Karachi Harbour</dd></div>
+                <div><dt>Event</dt><dd>Operation Trident</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="photo-library-card" role="listitem">
+            <div class="photo-library-media">
+              <img src="photo-library-05.jpg" alt="Soldiers advancing through a dramatic battlefield scene" loading="lazy" decoding="async">
+              <span class="photo-library-index">05</span>
+            </div>
+            <div class="photo-library-caption">
+              <span class="photo-library-kicker">INFANTRY &amp; AIR DEFENCE</span>
+              <h3>Battle of Longewala</h3>
+              <dl class="photo-library-meta">
+                <div><dt>Date</dt><dd>5 December 1971</dd></div>
+                <div><dt>Place</dt><dd>Longewala, Rajasthan</dd></div>
+                <div><dt>Event</dt><dd>Battle of Longewala</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="photo-library-card" role="listitem">
+            <div class="photo-library-media">
+              <img src="photo-library-06.jpg" alt="Line of Indian soldiers prepared for a field operation" loading="lazy" decoding="async">
+              <span class="photo-library-index">06</span>
+            </div>
+            <div class="photo-library-caption">
+              <span class="photo-library-kicker">ARMOURED BREAKTHROUGH</span>
+              <h3>Battle of Basantar</h3>
+              <dl class="photo-library-meta">
+                <div><dt>Date</dt><dd>15–17 December 1971</dd></div>
+                <div><dt>Place</dt><dd>Shakargarh sector</dd></div>
+                <div><dt>Event</dt><dd>Battle of Basantar</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="photo-library-card" role="listitem">
+            <div class="photo-library-media">
+              <img src="photo-library-07.jpg" alt="Archival military group with armoured vehicles" loading="lazy" decoding="async">
+              <span class="photo-library-index">07</span>
+            </div>
+            <div class="photo-library-caption">
+              <span class="photo-library-kicker">GLACIER OPERATIONS</span>
+              <h3>Operation Meghdoot</h3>
+              <dl class="photo-library-meta">
+                <div><dt>Date</dt><dd>April 1984</dd></div>
+                <div><dt>Place</dt><dd>Siachen Glacier, Ladakh</dd></div>
+                <div><dt>Event</dt><dd>Operation Meghdoot</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="photo-library-card" role="listitem">
+            <div class="photo-library-media">
+              <img src="photo-library-08.jpg" alt="Indian military personnel in an archival formation" loading="lazy" decoding="async">
+              <span class="photo-library-index">08</span>
+            </div>
+            <div class="photo-library-caption">
+              <span class="photo-library-kicker">AIRBORNE INTERVENTION</span>
+              <h3>Operation Cactus</h3>
+              <dl class="photo-library-meta">
+                <div><dt>Date</dt><dd>3 November 1988</dd></div>
+                <div><dt>Place</dt><dd>Hulhule &amp; Malé, Maldives</dd></div>
+                <div><dt>Event</dt><dd>Operation Cactus</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="photo-library-card" role="listitem">
+            <div class="photo-library-media">
+              <img src="photo-library-09.jpg" alt="Mountain artillery overlooking a high-altitude valley" loading="lazy" decoding="async">
+              <span class="photo-library-index">09</span>
+            </div>
+            <div class="photo-library-caption">
+              <span class="photo-library-kicker">MOUNTAIN WARFARE</span>
+              <h3>Operation Vijay</h3>
+              <dl class="photo-library-meta">
+                <div><dt>Date</dt><dd>May–July 1999</dd></div>
+                <div><dt>Place</dt><dd>Dras–Kargil, Ladakh</dd></div>
+                <div><dt>Event</dt><dd>Kargil War</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="photo-library-card" role="listitem">
+            <div class="photo-library-media">
+              <img src="photo-library-10.jpg" alt="Soldiers beside a military vehicle in a mountain theatre" loading="lazy" decoding="async">
+              <span class="photo-library-index">10</span>
+            </div>
+            <div class="photo-library-caption">
+              <span class="photo-library-kicker">KARGIL CAMPAIGN</span>
+              <h3>Capture of Tiger Hill</h3>
+              <dl class="photo-library-meta">
+                <div><dt>Date</dt><dd>4 July 1999</dd></div>
+                <div><dt>Place</dt><dd>Tiger Hill, Kargil</dd></div>
+                <div><dt>Event</dt><dd>Operation Vijay</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="photo-library-card" role="listitem">
+            <div class="photo-library-media">
+              <img src="photo-library-11.jpg" alt="Indian soldiers moving through mountain terrain" loading="lazy" decoding="async">
+              <span class="photo-library-index">11</span>
+            </div>
+            <div class="photo-library-caption">
+              <span class="photo-library-kicker">KARGIL CAMPAIGN</span>
+              <h3>Operations in the Dras Sector</h3>
+              <dl class="photo-library-meta">
+                <div><dt>Date</dt><dd>June–July 1999</dd></div>
+                <div><dt>Place</dt><dd>Dras, Ladakh</dd></div>
+                <div><dt>Event</dt><dd>Kargil War</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="photo-library-card" role="listitem">
+            <div class="photo-library-media">
+              <img src="photo-library-12.jpg" alt="Indian flag held aloft on a Himalayan ridge" loading="lazy" decoding="async">
+              <span class="photo-library-index">12</span>
+            </div>
+            <div class="photo-library-caption">
+              <span class="photo-library-kicker">HUMANITARIAN EVACUATION</span>
+              <h3>Operation Raahat</h3>
+              <dl class="photo-library-meta">
+                <div><dt>Date</dt><dd>April 2015</dd></div>
+                <div><dt>Place</dt><dd>Aden, Yemen</dd></div>
+                <div><dt>Event</dt><dd>Operation Raahat</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="photo-library-card" role="listitem">
+            <div class="photo-library-media">
+              <img src="photo-library-13.jpg" alt="Historic military collage featuring Indian defence operations" loading="lazy" decoding="async">
+              <span class="photo-library-index">13</span>
+            </div>
+            <div class="photo-library-caption">
+              <span class="photo-library-kicker">MODERN DEFENCE</span>
+              <h3>Integrated Commands &amp; CDS</h3>
+              <dl class="photo-library-meta">
+                <div><dt>Date</dt><dd>January 2020</dd></div>
+                <div><dt>Place</dt><dd>New Delhi, India</dd></div>
+                <div><dt>Event</dt><dd>Chief of Defence Staff established</dd></div>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Field Intelligence Section -->
+    <section id="field-intel" class="section field-intel-section" aria-labelledby="field-intel-heading">
+      <div class="section-container">
+        <div class="section-header field-intel-header">
+          <span class="section-kicker">FIELD INTELLIGENCE // DECLASSIFIED NOTES</span>
+          <h2 id="field-intel-heading">The Battlefield Is More Than the Battle</h2>
+          <p class="section-subtitle">Terrain, logistics, coordination, and resolve decide whether a defensive line holds.</p>
+        </div>
+
+        <div class="intel-grid">
+          <article class="intel-card">
+            <div class="intel-card-index">01</div>
+            <div>
+              <span class="intel-card-label">TERRAIN AS A WEAPON</span>
+              <h3>Read the ground before you read the map.</h3>
+              <p>Desert visibility, mountain altitude, river crossings, and narrow passes can turn a smaller force into a disciplined defensive system.</p>
+            </div>
+          </article>
+
+          <article class="intel-card">
+            <div class="intel-card-index">02</div>
+            <div>
+              <span class="intel-card-label">COMBINED ARMS</span>
+              <h3>Infantry holds. Armour breaks. Artillery shapes.</h3>
+              <p>The strongest operations synchronize soldiers, tanks, engineers, fire support, and air power instead of treating them as separate weapons.</p>
+            </div>
+          </article>
+
+          <article class="intel-card">
+            <div class="intel-card-index">03</div>
+            <div>
+              <span class="intel-card-label">LOGISTICS UNDER FIRE</span>
+              <h3>Every frontline depends on a supply line.</h3>
+              <p>Fuel, ammunition, medical evacuation, communications, and cold-weather sustainment are often the hidden difference between endurance and collapse.</p>
+            </div>
+          </article>
+
+          <article class="intel-card">
+            <div class="intel-card-index">04</div>
+            <div>
+              <span class="intel-card-label">JOINT RESPONSE</span>
+              <h3>Modern defence is a network, not a single service.</h3>
+              <p>Air, land, maritime, cyber, space, and humanitarian capabilities now converge into one operating picture and one chain of decision.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="field-status-strip" role="note">
+          <span class="status-dot" aria-hidden="true"></span>
+          <strong>OPERATIONAL PRINCIPLE:</strong>
+          <span>Hold the objective. Protect the force. Adapt faster than the threat.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Motion Lab -->
+    <section id="motion-lab" class="section motion-lab-section" aria-labelledby="motion-lab-heading">
+      <div class="section-container">
+        <div class="section-header field-intel-header">
+          <span class="section-kicker">MOTION SYSTEM // 31 EFFECTS IN ONE COMMAND DECK</span>
+          <h2 id="motion-lab-heading">The Archive Has a Pulse</h2>
+          <p class="section-subtitle">Live rendering, expressive type, morphing insignia, tactile controls, and archival media working as one system.</p>
+        </div>
+
+        <div class="motion-lab-grid">
+          <article class="motion-panel radar-panel">
+            <div class="motion-panel-header">
+              <span class="motion-panel-kicker">01 // REAL-TIME RENDERING</span>
+              <span class="motion-panel-status"><i class="readout-dot" aria-hidden="true"></i> LIVE</span>
+            </div>
+            <div class="radar-stage">
+              <canvas id="radar-canvas" aria-label="Animated tactical radar visualization"></canvas>
+              <div class="radar-sweep" aria-hidden="true"></div>
+              <div class="radar-center" aria-hidden="true">OPS</div>
+            </div>
+            <p class="motion-panel-note">A live canvas field combines line animation, ambient motion, and real-time particle rendering.</p>
+          </article>
+
+          <article class="motion-panel type-panel">
+            <div class="motion-panel-header">
+              <span class="motion-panel-kicker">02 // EXPRESSIVE TYPOGRAPHY</span>
+              <span class="motion-index">02</span>
+            </div>
+            <div class="type-lockup" aria-label="Hold fast">
+              <span>HOLD</span>
+              <strong>FAST</strong>
+              <i aria-hidden="true"></i>
+            </div>
+            <p class="motion-panel-note">Kinetic type, animated logos, and signal flicker give the interface a command-language rhythm.</p>
+          </article>
+
+          <article class="motion-panel flipbook-panel">
+            <div class="motion-panel-header">
+              <span class="motion-panel-kicker">03 // ARCHIVE FLIPBOOK</span>
+              <button id="flipbook-next" class="flipbook-control" type="button">NEXT FRAME ↗</button>
+            </div>
+            <div id="archive-flipbook" class="archive-flipbook">
+              <img class="flipbook-page page-current" src="image_1789191662455.png" alt="Archival armoured vehicles in a desert field.">
+              <img class="flipbook-page page-next" src="image_1789191680239.png" alt="Archival photograph of a soldier beside a tank.">
+              <span class="flipbook-frame-count">FRAME <strong id="flipbook-frame-count">01</strong> / 04</span>
+            </div>
+            <p class="motion-panel-note">A mixed-media flipbook uses page turns and stepped motion to create a stop-motion archive reel.</p>
+          </article>
+
+          <article class="motion-panel crest-panel">
+            <div class="motion-panel-header">
+              <span class="motion-panel-kicker">04 // MORPHING INSIGNIA</span>
+              <span class="motion-index">03D</span>
+            </div>
+            <div class="morphing-stage">
+              <div class="morphing-crest" aria-hidden="true">
+                <span>✦</span>
+              </div>
+              <div class="isometric-block" aria-hidden="true"></div>
+            </div>
+            <p class="motion-panel-note">Morphing, faux-3D, liquid, gradient, claymorphic, and neumorphic cues meet in one animated emblem.</p>
+          </article>
+        </div>
+
+        <div class="motion-ticker" aria-label="Motion capabilities">
+          <div class="motion-ticker-track">
+            <span>SCROLLYTELLING</span><b>✦</b><span>AR / VR READY</span><b>✦</b><span>COLLAB SYNC</span><b>✦</b><span>LIQUID MOTION</span><b>✦</b><span>ISOMETRIC</span><b>✦</b><span>PAGE TRANSITIONS</span><b>✦</b><span>LOADING SKELETONS</span><b>✦</b><span>HOVER MICROINTERACTIONS</span><b>✦</b><span>DOODLE LINES</span><b>✦</b><span>CHARACTER MOTION</span><b>✦</b><span>FLIPBOOK</span><b>✦</b><span>STOP-MOTION</span><b>✦</b>
+            <span>SCROLLYTELLING</span><b>✦</b><span>AR / VR READY</span><b>✦</b><span>COLLAB SYNC</span><b>✦</b><span>LIQUID MOTION</span><b>✦</b><span>ISOMETRIC</span><b>✦</b><span>PAGE TRANSITIONS</span><b>✦</b><span>LOADING SKELETONS</span><b>✦</b><span>HOVER MICROINTERACTIONS</span><b>✦</b><span>DOODLE LINES</span><b>✦</b><span>CHARACTER MOTION</span><b>✦</b><span>FLIPBOOK</span><b>✦</b><span>STOP-MOTION</span><b>✦</b>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission Command Learning Game -->
+    <section id="mission-game" class="section mission-game-section" aria-labelledby="mission-game-heading">
+      <div class="section-container">
+        <div class="section-header field-intel-header">
+          <span class="section-kicker">INTERACTIVE FIELD GAME // DECISION MAKER</span>
+          <h2 id="mission-game-heading">Mission Command: Choose the Move</h2>
+          <p class="section-subtitle">Read the situation, make the call, and learn the strategy behind India's historic defence operations.</p>
+        </div>
+
+        <div class="mission-game-card">
+          <div class="mission-game-topline">
+            <div>
+              <span class="mission-game-label">COMMAND DECK</span>
+              <strong id="mission-game-status">Mission 01 / 05</strong>
+            </div>
+            <div class="mission-game-score" aria-live="polite">
+              <span>Score</span>
+              <strong id="mission-game-score">0</strong>
+              <span class="mission-game-streak" id="mission-game-streak">No streak yet</span>
+            </div>
+          </div>
+
+          <div class="mission-game-progress" role="progressbar" aria-label="Mission game progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="20">
+            <div id="mission-game-progress-bar"></div>
+          </div>
+
+          <div class="mission-game-brief">
+            <div class="mission-game-brief-marker" aria-hidden="true">
+              <span>OPS</span>
+              <i></i>
+            </div>
+            <div class="mission-game-copy">
+              <span id="mission-game-era" class="mission-game-era">1947 // KASHMIR VALLEY</span>
+              <h3 id="mission-game-title">Situation loading…</h3>
+              <p id="mission-game-scenario">Choose the decision that best protects the objective.</p>
+            </div>
+          </div>
+
+          <div id="mission-game-options" class="mission-game-options" role="group" aria-labelledby="mission-game-title"></div>
+
+          <div id="mission-game-feedback" class="mission-game-feedback" role="status" aria-live="polite" hidden></div>
+
+          <div class="mission-game-controls">
+            <span class="mission-game-hint">No timer. Think like a commander.</span>
+            <button id="mission-game-next" class="btn btn-primary" type="button" hidden>Next Mission <span aria-hidden="true">↗</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Advanced Learning Games -->
+    <section id="advanced-games" class="section advanced-games-section" aria-labelledby="advanced-games-heading">
+      <div class="section-container">
+        <div class="section-header field-intel-header">
+          <span class="section-kicker">ADVANCED TRAINING // HARD MODE</span>
+          <h2 id="advanced-games-heading">The War Room</h2>
+          <p class="section-subtitle">Two tougher challenges for players who want to reason under pressure, not just recall names.</p>
+        </div>
+
+        <div class="advanced-games-grid">
+          <article class="advanced-game-card" aria-labelledby="sequence-game-heading">
+            <div class="advanced-game-header">
+              <div>
+                <span class="advanced-game-kicker">ADVANCED GAME 01 // ORDER OF BATTLE</span>
+                <h3 id="sequence-game-heading">Operation Sequencer</h3>
+              </div>
+              <span class="advanced-game-badge">HARD</span>
+            </div>
+            <p class="advanced-game-intro">The steps are scrambled. Move them into the order that makes the operation work.</p>
+
+            <div class="advanced-game-stats" aria-live="polite">
+              <span id="sequence-round">Round 01 / 03</span>
+              <strong id="sequence-score">Score 0</strong>
+            </div>
+
+            <div id="sequence-list" class="sequence-list" aria-label="Scrambled operation steps"></div>
+            <div id="sequence-feedback" class="advanced-game-feedback" role="status" aria-live="polite" hidden></div>
+
+            <div class="advanced-game-controls">
+              <button id="sequence-submit" class="btn btn-primary" type="button">Lock Sequence <span aria-hidden="true">↗</span></button>
+              <button id="sequence-next" class="btn btn-secondary" type="button" hidden>Next Round <span aria-hidden="true">↗</span></button>
+            </div>
+          </article>
+
+          <article class="advanced-game-card" aria-labelledby="intel-game-heading">
+            <div class="advanced-game-header">
+              <div>
+                <span class="advanced-game-kicker">ADVANCED GAME 02 // SIGNAL ANALYSIS</span>
+                <h3 id="intel-game-heading">Intel Intercept</h3>
+              </div>
+              <span class="advanced-game-badge">12 SEC</span>
+            </div>
+            <p class="advanced-game-intro">Four clues. One operation. Identify the historical operation before the signal window closes.</p>
+
+            <div class="advanced-game-stats" aria-live="polite">
+              <span id="intel-hard-round">Signal 01 / 05</span>
+              <strong id="intel-hard-timer">12s</strong>
+            </div>
+
+            <div id="intel-hard-clues" class="intel-hard-clues" aria-label="Intercepted clues"></div>
+            <div id="intel-hard-options" class="intel-hard-options" role="group" aria-labelledby="intel-game-heading"></div>
+            <div id="intel-hard-feedback" class="advanced-game-feedback" role="status" aria-live="polite" hidden></div>
+
+            <div class="advanced-game-controls">
+              <span class="advanced-game-hint">Fast recall. Careful reading.</span>
+              <button id="intel-hard-next" class="btn btn-primary" type="button" hidden>Next Signal <span aria-hidden="true">↗</span></button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quiz Section (Question + 3 Options + Score Display) -->
+    <section id="quiz" class="section quiz-section" aria-labelledby="quiz-heading">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 id="quiz-heading">Tactical Knowledge Assessment</h2>
+          <p class="section-subtitle">Test your grasp of strategic military engagements and historical turning points.</p>
+        </div>
+
+        <div class="quiz-card">
+          <!-- Score Display -->
+          <div class="score-display-panel" aria-live="polite">
+            <div class="score-badge">
+              <span class="score-label">Score:</span>
+              <strong id="score-count" class="score-value">0</strong>
+              <span class="score-total">/ <span id="total-questions">6</span></span>
+            </div>
+            <div class="rank-indicator">
+              <span>Status: <strong id="user-status-text">Cadet</strong></span>
+            </div>
+          </div>
+
+          <!-- Quiz Completion Progress Bar -->
+          <div class="quiz-completion-container" aria-label="Quiz Completion Progress">
+            <div class="completion-meta">
+              <span class="completion-label"><span class="completion-icon" aria-hidden="true">&#x1F4CA;</span> Assessment Progress:</span>
+              <strong id="completion-pct" class="completion-value">16%</strong>
+            </div>
+            <div class="completion-track" role="progressbar" aria-valuenow="16" aria-valuemin="0" aria-valuemax="100">
+              <div id="quiz-completion-bar" class="completion-bar-fill"></div>
+            </div>
+          </div>
+
+          <!-- Tactical Question Countdown Clock -->
+          <div class="quiz-timer-container" aria-label="Question Timer">
+            <div class="timer-meta">
+              <span class="timer-label"><span class="timer-icon">&#x23F1;&#xFE0F;</span> Tactical Clock:</span>
+              <strong id="timer-seconds" class="timer-countdown">20s</strong>
+            </div>
+            <div class="timer-track" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+              <div id="quiz-timer-fill" class="timer-fill"></div>
+            </div>
+          </div>
+
+          <!-- Quiz Content Form -->
+          <form id="quiz-form" class="quiz-form">
+            <fieldset class="quiz-fieldset">
+              <legend id="quiz-question-text" class="quiz-question">
+                Which historic 1971 engagement saw a lone infantry post with 120 soldiers withstand a massive armored column in the Thar Desert?
+              </legend>
+
+              <div class="quiz-options-group" role="radiogroup" aria-labelledby="quiz-question-text">
+                <!-- Option A -->
+                <label class="quiz-option-label" for="option-a">
+                  <input type="radio" id="option-a" name="quiz-answer" value="A" required>
+                  <span class="option-marker">A</span>
+                  <span class="option-text">Battle of Longewala</span>
+                </label>
+
+                <!-- Option B -->
+                <label class="quiz-option-label" for="option-b">
+                  <input type="radio" id="option-b" name="quiz-answer" value="B">
+                  <span class="option-marker">B</span>
+                  <span class="option-text">Battle of Asal Uttar</span>
+                </label>
+
+                <!-- Option C -->
+                <label class="quiz-option-label" for="option-c">
+                  <input type="radio" id="option-c" name="quiz-answer" value="C">
+                  <span class="option-marker">C</span>
+                  <span class="option-text">Battle of Badgam</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="quiz-controls">
+              <button type="submit" id="submit-quiz-btn" class="btn btn-primary">Submit Answer</button>
+              <button type="button" id="next-quiz-btn" class="btn btn-secondary" hidden>Next Question</button>
+            </div>
+          </form>
+
+          <!-- Live Feedback notification area -->
+          <div id="quiz-feedback" class="quiz-feedback" role="status" aria-live="polite" hidden></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Badge Section (Cadet → Commander → General) -->
+    <section id="badges" class="section badges-section" aria-labelledby="badges-heading">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 id="badges-heading">Honor Badges &amp; Rank Progression</h2>
+          <p class="section-subtitle">Earn accolades as you demonstrate operational awareness and strategic mastery.</p>
+        </div>
+
+        <!-- Rank Flow Representation -->
+        <div class="rank-hierarchy-progression" aria-label="Rank Progression Flow">
+          <span class="flow-step current">Cadet</span>
+          <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+          <span class="flow-step">Commander</span>
+          <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+          <span class="flow-step">General</span>
+        </div>
+
+        <div class="badges-grid">
+          <!-- Rank 1: Cadet -->
+          <div id="badge-cadet" class="badge-card active" data-rank="cadet" aria-label="Cadet Rank - Unlocked">
+            <div class="badge-icon-wrapper">
+              <span class="badge-icon" aria-hidden="true">&#x1FA96;</span>
+            </div>
+            <div class="badge-details">
+              <h3 class="badge-title">Cadet</h3>
+              <p class="badge-requirement">Initial enlistment rank awarded to all recruits joining the heritage interactive.</p>
+              <span class="badge-status-pill unlocked">Unlocked</span>
+            </div>
+          </div>
+
+          <!-- Rank 2: Commander -->
+          <div id="badge-commander" class="badge-card locked" data-rank="commander" aria-label="Commander Rank - Locked">
+            <div class="badge-icon-wrapper">
+              <span class="badge-icon" aria-hidden="true">&#x2694;&#xFE0F;</span>
+            </div>
+            <div class="badge-details">
+              <h3 class="badge-title">Commander</h3>
+              <p class="badge-requirement">Awarded to tactical leaders who score 3 or more points in tactical assessments.</p>
+              <span class="badge-status-pill locked">Locked</span>
+            </div>
+          </div>
+
+          <!-- Rank 3: General -->
+          <div id="badge-general" class="badge-card locked" data-rank="general" aria-label="General Rank - Locked">
+            <div class="badge-icon-wrapper">
+              <span class="badge-icon" aria-hidden="true">&#x1F396;&#xFE0F;</span>
+            </div>
+            <div class="badge-details">
+              <h3 class="badge-title">General</h3>
+              <p class="badge-requirement">Master strategist honor conferred upon attaining a perfect score in all modules.</p>
+              <span class="badge-status-pill locked">Locked</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-credits">
+        <p class="credits-text">&copy; 2026 Defense Heritage Interactive. Built for defense history education &amp; research.</p>
+        <p class="credits-subtext">Dedicated to the valor, vigilance, and legacy of defense personnel.</p>
+      </div>
+      <div class="footer-tagline">
+        <p class="source-motto">May the Source Be With You</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Event Dossier Tactical Modal Dialog -->
+  <dialog id="event-dossier-modal" class="dossier-dialog" aria-labelledby="modal-event-title">
+    <div class="dossier-card">
+      <div class="dossier-header">
+        <div class="dossier-badge-row">
+          <span class="dossier-pulse-dot" aria-hidden="true"></span>
+          <span id="modal-event-tag" class="dossier-tag">TACTICAL DOSSIER</span>
+        </div>
+        <button id="close-modal-btn" class="close-modal-btn" aria-label="Close dossier modal">&times;</button>
+      </div>
+
+      <div class="dossier-main">
+        <h3 id="modal-event-title" class="dossier-title">Event Title</h3>
+        <div class="dossier-meta">
+          <span id="modal-event-date" class="meta-item"></span>
+          <span class="meta-sep" aria-hidden="true">&bull;</span>
+          <span id="modal-event-location" class="meta-item"></span>
+        </div>
+
+        <p id="modal-event-overview" class="dossier-overview"></p>
+
+        <div class="dossier-stats-grid">
+          <div class="stat-card">
+            <span class="stat-label">Command &amp; Forces</span>
+            <p id="modal-event-commanders" class="stat-value"></p>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Strategic Objective</span>
+            <p id="modal-event-objective" class="stat-value"></p>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Key Equipment / Assets</span>
+            <p id="modal-event-equipment" class="stat-value"></p>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Tactical Outcome</span>
+            <p id="modal-event-outcome" class="stat-value"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="dossier-footer">
+        <button id="close-modal-bottom-btn" class="btn btn-secondary">Close Dossier (ESC)</button>
+      </div>
+    </div>
+  </dialog>
+
+</body>
+</html>
